@@ -1,0 +1,193 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+  text-decoration: none;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background: url(../image/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+.container {
+  padding: 0 10% 0 30%;
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+}
+header {
+  grid-area: "kiri";
+  display: grid;
+  grid-area: "profil" "header-nav" "social-network" "footer";
+  grid-template-rows: 1.2fr 1.8fr 0.8fr 0.2fr;
+  position: fixed;
+  top: 0px;
+  left: 130px;
+  height: 100%;
+  width: 20%;
+  background-color: lightskyblue;
+  box-shadow: 0px 0px 6px black;
+}
+header .profil {
+  grid-area: "profil";
+  display: grid;
+  grid-area: "images" "p" "span";
+  grid-template-rows: 1.6fr 0.2fr 0.2fr;
+}
+header .profil .images {
+  grid-area: "images";
+  place-self: end center;
+}
+header .profil .images img {
+  border-radius: 50%;
+  box-shadow: 0px 0px 6px black;
+}
+header .profil h1 {
+  grid-area: "p";
+  place-self: center;
+  font-size: 1.5em;
+  color: whitesmoke;
+}
+header .profil span {
+  grid-area: "span";
+  place-self: center;
+  color: whitesmoke;
+}
+header .header-nav {
+  grid-area: "header-nav";
+  align-self: center;
+}
+header .header-nav ul {
+  text-align: center;
+}
+header .header-nav ul li {
+  padding: 20px 10px;
+  border-top: 2px solid white;
+}
+header .header-nav ul .bawah {
+  border-bottom: 2px solid white;
+}
+header .header-nav ul li a {
+  color: white;
+  text-transform: capitalize;
+}
+header .header-nav ul li:hover {
+}
+
+header .social-network {
+  grid-area: "social-network";
+  justify-self: center;
+}
+header .social-network ul {
+  display: flex;
+}
+header .social-network ul li {
+  margin: 0 3px;
+}
+
+header .social-network ul li a {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 14px;
+  transition: all 0.5s;
+}
+
+header .social-network ul li a:hover {
+  background-color: #fff;
+  color: lightskyblue;
+}
+
+header footer {
+  grid-area: "footer";
+  justify-self: center;
+  font-size: 0.8em;
+}
+.konten {
+  width: 400px;
+  height: 250px;
+}
+main {
+  display: grid;
+  margin-top: 60px;
+  grid-area: "tentangsaya" "hobbi" "pendidikan" "hasilkerja" "kontaksaya";
+  grid-template-rows: 800px 800px 800px 800px 800px;
+}
+main .aboutme {
+  grid-area: "tentangsaya";
+  display: grid;
+  grid-area: "h2" "span";
+  grid-template-rows: 1fr 5fr;
+}
+main .aboutme h2 {
+  border-bottom: 2px solid lightskyblue;
+  color: whitesmoke;
+  grid-area: "h2";
+  place-self: start center;
+  font-size: 2em;
+  text-shadow: 1px 1px 3px black;
+}
+main .aboutme span {
+  grid-area: "span";
+  display: grid;
+  grid-area: "hello" "p";
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 30px;
+  margin-top: 150px;
+}
+main .aboutme span .gambar {
+  grid-area: "hello";
+}
+main .aboutme span .gambar img {
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px black;
+}
+main .aboutme span p {
+  grid-area: "p";
+  margin-top: 10px;
+  color: whitesmoke;
+  font-size: 1.3em;
+  text-shadow: 1px 1px 3px black;
+}
+
+main .hobbi {
+  grid-area: "tentangsaya";
+  display: grid;
+  grid-area: "h2" "span";
+  grid-template-rows: 1fr 5fr;
+}
+main .hobbi h2 {
+  border-bottom: 2px solid lightskyblue;
+  color: whitesmoke;
+  grid-area: "h2";
+  place-self: start center;
+  font-size: 2em;
+  text-shadow: 1px 1px 3px black;
+}
+main .hobbi span {
+  grid-area: "span";
+  display: grid;
+  grid-area: "hello" "p";
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 30px;
+  margin-top: 150px;
+}
+main .hobbi span .gambar {
+  grid-area: "hello";
+}
+main .hobbi span .gambar img {
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px black;
+}
+main .hobbi span p {
+  grid-area: "p";
+  margin-top: 10px;
+  color: whitesmoke;
+  font-size: 1.3em;
+  text-shadow: 1px 1px 3px black;
+}
